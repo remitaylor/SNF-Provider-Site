@@ -48,7 +48,7 @@ The current photos are cropped from the low-resolution homepage mockup so the si
 
 | File | Used for | Recommended size | Current quality |
 | --- | --- | --- | --- |
-| `hero-clinician-resident.jpg` | Homepage hero, Our Model | 2400 × 1400 | Soft, replace |
+| `hero-clinician-resident.jpg` | Homepage hero, Our Model | 1928 × 816 (wide) | Final hero image provided |
 | `svc-primary-care.jpg` | Primary Care card | 800 × 500 | **Poor, replace** |
 | `svc-medical-directorship.jpg` | Medical Directorship card | 800 × 500 | **Poor, replace** |
 | `svc-psychological-care.jpg` | Psychological Care card | 800 × 500 | **Poor, replace** |
