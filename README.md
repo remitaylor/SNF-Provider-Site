@@ -52,7 +52,7 @@ Most photos are final, high-resolution images. The facility exterior is still cr
 | `svc-primary-care.jpg` | Primary Care card | 1536 × 1024 | Final image provided |
 | `svc-medical-directorship.jpg` | Medical Directorship card, About → Who We Are | 1600 × 900 | Final image provided |
 | `svc-psychological-care.jpg` | Psychological Care card | 1536 × 1024 | Final image provided |
-| `svc-behavioral-health.jpg` | Behavioral Health card | 1536 × 1024 | Final image provided |
+| `svc-behavioral-health.jpg` | Behavioral Health card | 1600 × 880 | Final image provided |
 | `svc-lab-diagnostics.jpg` | Laboratory & Diagnostics card | 1536 × 1024 | Final image provided |
 | `svc-ancillary-services.jpg` | Ancillary Services card | 1600 × 903 | Final image provided |
 | `step-understand.jpg` | Model step 01, Our Model, inner pages | 1624 × 917 | Final image provided |

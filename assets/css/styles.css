@@ -710,3 +710,11 @@ ul { margin: 0; padding: 0; }
 }
 
 .mobile-cta { display: none; }
+
+/* Focal points for service photos in the narrow Services-page panels */
+#primary-care .svc-panel-inner img { object-position: 76% center; }
+#medical-directorship .svc-panel-inner img { object-position: 42% center; }
+#psychological-care .svc-panel-inner img { object-position: 72% center; }
+#behavioral-health .svc-panel-inner img { object-position: 70% center; }
+#lab-diagnostics .svc-panel-inner img { object-position: 24% center; }
+#ancillary-services .svc-panel-inner img { object-position: 45% center; }
