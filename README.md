@@ -23,8 +23,9 @@ Linking to a service anchor (for example `services.html#behavioral-health`) open
 ```
 assets/
   css/styles.css     All styles; design tokens (colors, radii, shadows) are at the top in :root
-  js/main.js         Mobile nav, scroll reveal, counters, charts, carousel, service cards, form
-  img/               Logo mark + favicon (SVG)
+  js/main.js         Mobile nav, scroll reveal, counters, charts, carousels, service cards, form
+  img/               IHP logo (color + white), mark, favicons
+  img/photos/        Site photography (see below)
 ```
 
 ## Running locally
@@ -41,19 +42,37 @@ Then visit http://localhost:8000.
 
 Any static host works, for example GitHub Pages (Settings → Pages → deploy from `main`, root folder), Netlify, Azure Static Web Apps or S3.
 
-## Placeholders to replace before launch
+## Photography
 
-All content is draft. Items that still need real assets or verified information:
+The current photos are cropped from the low-resolution homepage mockup so the site matches it visually. **They are stand-ins and should be replaced with high-resolution originals.** To swap a photo, overwrite the file in `assets/img/photos/` with the same name (JPG, landscape unless noted).
 
-- **Photography:** every image is a styled placeholder (`<div class="ph" ...>` with a "Photo: …" label). Replace each one with `<img src="assets/img/....jpg" alt="...">` and keep the same container.
-- **Logo:** `assets/img/logo-mark.svg` and the inline header mark are placeholders. Swap in the final IHP logo files.
-- **Metrics:** all numbers (50+ facilities, 200+ providers, 25%, 95%, charts and case-study results) are illustrative and labeled that way on the site. Corby to confirm which metrics can be published.
-- **Leadership:** Corby and Dr. Arshad need full names, titles, bios and headshots. Additional leaders are TBD.
+| File | Used for | Recommended size | Current quality |
+| --- | --- | --- | --- |
+| `hero-clinician-resident.jpg` | Homepage hero, Our Model | 2400 × 1400 | Soft, replace |
+| `svc-primary-care.jpg` | Primary Care card | 800 × 500 | **Poor, replace** |
+| `svc-medical-directorship.jpg` | Medical Directorship card | 800 × 500 | **Poor, replace** |
+| `svc-psychological-care.jpg` | Psychological Care card | 800 × 500 | **Poor, replace** |
+| `svc-behavioral-health.jpg` | Behavioral Health card | 800 × 500 | **Poor, replace** |
+| `step-understand.jpg` | Model step 01, inner pages | 1200 × 640 | Acceptable stand-in |
+| `step-integrate.jpg` | Model step 02, Lab & Diagnostics card, inner pages | 1200 × 640 | Acceptable stand-in |
+| `step-optimize.jpg` | Model step 03, Ancillary card, inner pages | 1200 × 640 | Acceptable stand-in |
+| `facility-exterior.jpg` | Testimonial, Who We Serve, case studies | 2400 × 1200 | Soft, replace |
+| `bg-interior-blur.jpg` | Blurred background behind the services diagram | any (blurred) | OK |
+| `bg-facility-blur.jpg` | Blurred background in Impact + Testimonial | any (blurred) | OK |
+| `leader-corby.jpg` | Corby headshot (square or 4:3) | 800 × 800 | Mockup placeholder, replace with real headshot |
+| `leader-arshad.jpg` | Dr. Arshad headshot (square or 4:3) | 800 × 800 | Mockup placeholder, replace with real headshot |
+
+Lab & Diagnostics and Ancillary Services don't have their own photos yet; add `svc-lab-diagnostics.jpg` / `svc-ancillary-services.jpg` and update `index.html` and `services.html`.
+
+## Other placeholders to replace before launch
+
+- **Metrics:** all numbers (50+ facilities, 200+ providers, 25%, 95%, charts and case-study results) are illustrative. Corby to confirm which metrics can be published.
+- **Leadership:** Corby and Dr. Arshad need full names, titles and bios. Additional leaders are TBD.
 - **Testimonial and case studies:** placeholders.
 - **Services:** each card shows "Service availability to be confirmed". Confirm which services are provided directly, which are coordinated through partners, and which are planned.
 - **Contact details:** email, phone and address are "coming soon".
 - **Contact form:** not connected yet. Set `FORM_ENDPOINT` in `assets/js/main.js` to a form handler (Formspree, HubSpot, an internal API, etc.). Until then the form validates input and shows a preview message without sending anything.
-- **Privacy Policy and Terms of Use** links in the footer.
+- **Social links** (LinkedIn, YouTube) in the footer and the **Privacy Policy / Terms of Use** links point to `#`.
 
 ## Open questions (from the sitemap draft)
 
