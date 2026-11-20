@@ -57,7 +57,7 @@ The current photos are cropped from the low-resolution homepage mockup so the si
 | `step-integrate.jpg` | Model step 02, Lab & Diagnostics card, inner pages | 1200 × 640 | Acceptable stand-in |
 | `step-optimize.jpg` | Model step 03, Ancillary card, inner pages | 1200 × 640 | Acceptable stand-in |
 | `facility-exterior.jpg` | Testimonial, Who We Serve, case studies | 2400 × 1200 | Soft, replace |
-| `bg-interior-blur.jpg` | Blurred background behind the services diagram | any (blurred) | OK |
+| `bg-interior-blur.jpg` | Background of the IHP Difference section | 1536 × 1024 | Final image provided |
 | `bg-facility-blur.jpg` | Blurred background in Impact + Testimonial | any (blurred) | OK |
 | `leader-corby.jpg` | Corby headshot | 512 × 512 (square) | Final headshot provided; an 800px+ version would look sharper on large screens |
 | `leader-arshad.jpg` | Dr. Arshad headshot | 512 × 512 (square) | Final headshot provided; an 800px+ version would look sharper on large screens |
