@@ -49,10 +49,12 @@ The current photos are cropped from the low-resolution homepage mockup so the si
 | File | Used for | Recommended size | Current quality |
 | --- | --- | --- | --- |
 | `hero-clinician-resident.jpg` | Homepage hero, Our Model | 1928 × 816 (wide) | Final hero image provided |
-| `svc-primary-care.jpg` | Primary Care card | 800 × 500 | **Poor, replace** |
-| `svc-medical-directorship.jpg` | Medical Directorship card | 800 × 500 | **Poor, replace** |
-| `svc-psychological-care.jpg` | Psychological Care card | 800 × 500 | **Poor, replace** |
+| `svc-primary-care.jpg` | Primary Care card | 1536 × 1024 | Final image provided |
+| `svc-medical-directorship.jpg` | Medical Directorship card, About → Who We Are | 1600 × 900 | Final image provided |
+| `svc-psychological-care.jpg` | Psychological Care card | 1536 × 1024 | Final image provided |
 | `svc-behavioral-health.jpg` | Behavioral Health card | 800 × 500 | **Poor, replace** |
+| `svc-lab-diagnostics.jpg` | Laboratory & Diagnostics card | 1536 × 1024 | Final image provided |
+| `svc-ancillary-services.jpg` | Ancillary Services card | 1600 × 903 | Final image provided |
 | `step-understand.jpg` | Model step 01, Our Model, inner pages | 1624 × 917 | Final image provided |
 | `step-integrate.jpg` | Model step 02, Lab & Diagnostics card, inner pages | 1200 × 640 | Acceptable stand-in |
 | `step-optimize.jpg` | Model step 03, Ancillary card, inner pages | 1200 × 640 | Acceptable stand-in |
@@ -61,8 +63,6 @@ The current photos are cropped from the low-resolution homepage mockup so the si
 | `bg-facility-blur.jpg` | Blurred background in Impact + Testimonial | any (blurred) | OK |
 | `leader-corby.jpg` | Corby headshot | 512 × 512 (square) | Final headshot provided; an 800px+ version would look sharper on large screens |
 | `leader-arshad.jpg` | Dr. Arshad headshot | 512 × 512 (square) | Final headshot provided; an 800px+ version would look sharper on large screens |
-
-Lab & Diagnostics and Ancillary Services don't have their own photos yet; add `svc-lab-diagnostics.jpg` / `svc-ancillary-services.jpg` and update `index.html` and `services.html`.
 
 ## Other placeholders to replace before launch
 
