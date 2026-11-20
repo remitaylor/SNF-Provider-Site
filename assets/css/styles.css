@@ -663,12 +663,18 @@ ul { margin: 0; padding: 0; }
   .mobile-cta .btn { width: 100%; justify-content: center; }
   body.nav-open { overflow: hidden; }
 
-  .hero { display: flex; flex-direction: column-reverse; }
-  .hero-photo { position: relative; width: 100%; height: 340px; }
+  /* Phones/tablets: same blended look as desktop. The photo sits at the
+     bottom of the hero and fades up into the light background behind the text. */
+  .hero { display: block; }
   .hero::after { display: none; }
-  .hero-photo::before { background: linear-gradient(0deg, rgba(8,34,63,.5) 0%, rgba(8,34,63,0) 45%); }
-  .hero-grid { min-height: 0; padding-block: 48px 40px; position: static; }
-  .hero-badge { bottom: 24px; left: var(--gutter); right: auto; }
+  .hero-photo { position: absolute; top: auto; left: 0; right: 0; bottom: 0; width: 100%; height: 400px;
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.6) 22%, #000 45%);
+    mask-image: linear-gradient(180deg, transparent 0%, rgba(0,0,0,.6) 22%, #000 45%); }
+  .hero-photo img { object-position: 78% 30%; }
+  .hero-photo::before { background: linear-gradient(0deg, rgba(8,34,63,.55) 0%, rgba(8,34,63,0) 40%); }
+  .hero-grid { min-height: 0; padding-block: 40px 330px; position: relative; display: block; }
+  .hero-copy { max-width: 560px; }
+  .hero-badge { position: absolute; bottom: 22px; left: var(--gutter); right: auto; gap: 12px; }
   .intro-grid, .impact-grid, .leaders-grid, .feature-row, .contact-grid, .split-head, .chart-grid { grid-template-columns: 1fr; }
   .split-head { gap: 16px; }
   .difference-grid { grid-template-columns: 1fr; }
@@ -707,7 +713,17 @@ ul { margin: 0; padding: 0; }
   .orbit-detail__icon { width: 40px; height: 40px; }
   .quote-card { padding: 28px; }
   .step p { margin-left: 0; }
-  .hero-photo { height: 280px; }
+  .hero-photo { height: 330px; }
+  .hero-grid { padding-block: 32px 300px; }
+  .hero .eyebrow { font-size: .7rem; margin-bottom: 10px; }
+  .hero h1 { font-size: 2.35rem; margin-bottom: 14px; }
+  .hero .lead { font-size: 1rem; line-height: 1.6; margin-bottom: 22px; }
+  .hero .btn-row { flex-wrap: nowrap; gap: 10px; }
+  .hero .btn-row .btn { padding: 13px 18px; font-size: .9rem; }
+  .play { width: 48px; height: 48px; box-shadow: 0 0 0 5px rgba(255,255,255,.85), 0 8px 20px rgba(8,34,63,.35); }
+  .play svg { width: 20px; height: 20px; }
+  .hero-badge strong { font-size: .9rem; }
+  .hero-badge span span { font-size: .75rem; }
 }
 
 .mobile-cta { display: none; }
@@ -846,3 +862,12 @@ ul { margin: 0; padding: 0; }
 @media (max-width: 640px) { .orbit-node { width: 26%; font-size: 2.9cqw; gap: .6cqw; padding: 1.5cqw; } }
 /* Phones: the sticky section tabs already list the six services, so hide the duplicate pill row */
 @media (max-width: 960px) { .svc-tabs { display: none; } }
+
+/* Phones/tablets: read the IHP Difference heading first, then use the diagram */
+@media (max-width: 960px) {
+  .difference { background: #fff; }
+  .difference::before { display: none; }
+  .difference-copy { order: -1; padding-bottom: 8px; }
+  .difference-media { background: #e9eef2 url("../img/photos/bg-interior-blur.jpg") center / cover no-repeat; padding-block: 40px; }
+  .difference-media::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,0) 14%, rgba(255,255,255,0) 86%, #fff 100%); }
+}
