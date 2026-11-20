@@ -871,3 +871,46 @@ ul { margin: 0; padding: 0; }
   .difference-media { background: #e9eef2 url("../img/photos/bg-interior-blur.jpg") center / cover no-repeat; padding-block: 40px; }
   .difference-media::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, #fff 0%, rgba(255,255,255,0) 14%, rgba(255,255,255,0) 86%, #fff 100%); }
 }
+
+/* ---- Mobile review fixes ------------------------------------------------ */
+@media (max-width: 960px) {
+  /* The header's backdrop blur made it the containing block for the fixed
+     menu panel, clipping the menu to the header's height. Use a solid header. */
+  .site-header { backdrop-filter: none; -webkit-backdrop-filter: none; background: #fff; }
+  .primary-nav { height: calc(100dvh - var(--header-h)); }
+  /* Comfortable tap targets for inline text links */
+  .text-link { min-height: 44px; }
+  /* 16px inputs stop iPhones from zooming in when a field is tapped */
+  .field input, .field select, .field textarea { font-size: 16px; }
+}
+@media (max-width: 640px) {
+  /* Stats: compact 2 x 2 grid instead of four full-width cards */
+  .stats, .dash { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .stat, .dash .stat { flex-direction: column; align-items: flex-start; gap: 10px; padding: 16px; }
+  .stat .ic svg { width: 28px; height: 28px; }
+  .stat-num { font-size: 1.6rem; }
+  .stat-label { font-size: .82rem; }
+  .stat-note { font-size: .72rem; }
+
+  /* Leadership: photo beside the text instead of a full-screen portrait */
+  .leader-cards, .leaders-section .leader-cards { grid-template-columns: 1fr; gap: 16px; }
+  .leader { flex-direction: row; gap: 16px; align-items: flex-start; background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 14px; box-shadow: var(--shadow-sm); }
+  .leader:hover { transform: none; }
+  .leader-photo { flex-shrink: 0; width: 104px; aspect-ratio: 1; border-radius: 14px; box-shadow: none; }
+  .leader-photo--tbd svg { width: 36px; height: 36px; }
+  .leader-body { padding: 0; }
+  .leader-body h3 { font-size: 1.1rem; }
+  .leader-role { margin-bottom: 6px; font-size: .82rem; }
+  .leader-body p { font-size: .85rem; margin-bottom: 6px; }
+  .leader-body .text-link { min-height: 32px; }
+  #leadership .grid-3 { gap: 16px; }
+
+  /* Chart labels readable at phone width */
+  .line-chart .axis-label { font-size: 22px; }
+
+  /* Partnership timeline: give the cards more room */
+  .timeline li { grid-template-columns: 40px 1fr; gap: 12px; }
+  .timeline::before { left: 19px; }
+  .timeline .step-num { width: 40px; height: 40px; font-size: .9rem; }
+  .timeline .card { padding: 16px 18px; }
+}
