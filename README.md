@@ -53,7 +53,7 @@ The current photos are cropped from the low-resolution homepage mockup so the si
 | `svc-medical-directorship.jpg` | Medical Directorship card | 800 × 500 | **Poor, replace** |
 | `svc-psychological-care.jpg` | Psychological Care card | 800 × 500 | **Poor, replace** |
 | `svc-behavioral-health.jpg` | Behavioral Health card | 800 × 500 | **Poor, replace** |
-| `step-understand.jpg` | Model step 01, inner pages | 1200 × 640 | Acceptable stand-in |
+| `step-understand.jpg` | Model step 01, Our Model, inner pages | 1624 × 917 | Final image provided |
 | `step-integrate.jpg` | Model step 02, Lab & Diagnostics card, inner pages | 1200 × 640 | Acceptable stand-in |
 | `step-optimize.jpg` | Model step 03, Ancillary card, inner pages | 1200 × 640 | Acceptable stand-in |
 | `facility-exterior.jpg` | Testimonial, Who We Serve, case studies | 2400 × 1200 | Soft, replace |

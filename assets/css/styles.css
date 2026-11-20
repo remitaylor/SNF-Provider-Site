@@ -414,7 +414,8 @@ ul { margin: 0; padding: 0; }
 .step-top .ic svg { width: 34px; height: 34px; stroke-width: 1.6; }
 .step h3 { margin: 0; }
 .step p { font-size: .92rem; margin-left: 82px; color: var(--muted); }
-.step-media { position: relative; margin-top: 14px; }
+.step { display: flex; flex-direction: column; }
+.step-media { position: relative; margin-top: auto; padding-top: 14px; }
 .step-media img { width: 100%; aspect-ratio: 16 / 8.5; object-fit: cover; border-radius: 14px; }
 .step-go { position: absolute; right: -10px; bottom: -12px; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--teal-500); color: #fff; box-shadow: 0 0 0 5px #fff, var(--shadow); transition: transform .2s ease, background .2s ease; }
 .step-go:hover { background: var(--teal-600); color: #fff; transform: scale(1.08); }
