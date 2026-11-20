@@ -44,7 +44,7 @@ Any static host works, for example GitHub Pages (Settings → Pages → deploy f
 
 ## Photography
 
-The current photos are cropped from the low-resolution homepage mockup so the site matches it visually. **They are stand-ins and should be replaced with high-resolution originals.** To swap a photo, overwrite the file in `assets/img/photos/` with the same name (JPG, landscape unless noted).
+Most photos are final, high-resolution images. The facility exterior is still cropped from the low-resolution mockup and should be replaced. To swap a photo, overwrite the file in `assets/img/photos/` with the same name (JPG, landscape unless noted).
 
 | File | Used for | Recommended size | Current quality |
 | --- | --- | --- | --- |
@@ -52,12 +52,12 @@ The current photos are cropped from the low-resolution homepage mockup so the si
 | `svc-primary-care.jpg` | Primary Care card | 1536 × 1024 | Final image provided |
 | `svc-medical-directorship.jpg` | Medical Directorship card, About → Who We Are | 1600 × 900 | Final image provided |
 | `svc-psychological-care.jpg` | Psychological Care card | 1536 × 1024 | Final image provided |
-| `svc-behavioral-health.jpg` | Behavioral Health card | 800 × 500 | **Poor, replace** |
+| `svc-behavioral-health.jpg` | Behavioral Health card | 1536 × 1024 | Final image provided |
 | `svc-lab-diagnostics.jpg` | Laboratory & Diagnostics card | 1536 × 1024 | Final image provided |
 | `svc-ancillary-services.jpg` | Ancillary Services card | 1600 × 903 | Final image provided |
 | `step-understand.jpg` | Model step 01, Our Model, inner pages | 1624 × 917 | Final image provided |
-| `step-integrate.jpg` | Model step 02, Lab & Diagnostics card, inner pages | 1200 × 640 | Acceptable stand-in |
-| `step-optimize.jpg` | Model step 03, Ancillary card, inner pages | 1200 × 640 | Acceptable stand-in |
+| `step-integrate.jpg` | Model step 02, Services "Every service, connected", Partnerships, Outcomes case | 1600 × 900 | Final image provided |
+| `step-optimize.jpg` | Model step 03 (crop of the Ancillary photo) | 1000 × 532 | Final image provided |
 | `facility-exterior.jpg` | Testimonial, Who We Serve, case studies | 2400 × 1200 | Soft, replace |
 | `bg-interior-blur.jpg` | Background of the IHP Difference section | 1536 × 1024 | Final image provided |
 | `bg-facility-blur.jpg` | Blurred background in Impact + Testimonial | any (blurred) | OK |
