@@ -8,7 +8,7 @@ This is a static site (HTML, CSS and vanilla JavaScript) with no build step or d
 
 | File | Nav item | Sections (from the sitemap) |
 | --- | --- | --- |
-| `index.html` | Home | Hero, Who We Are, Clinical Services carousel, The IHP Difference, Care Model, Why Partner, Outcomes & Impact, Executive Leadership, Testimonial, Partnership CTA |
+| `index.html` | Home | Hero → The IHP Difference (interactive services diagram) → How Our Model Works → Impact stats + testimonial → Executive Leadership → Partnership CTA |
 | `about.html` | About IHP | `#who-we-are`, `#mission`, `#leadership` |
 | `our-model.html` | Our Model | `#integrated-care-model`, `#how-we-partner`, `#post-acute-approach` |
 | `services.html` | Services | Expandable cards: `#primary-care`, `#medical-directorship`, `#psychological-care`, `#behavioral-health`, `#lab-diagnostics`, `#ancillary-services` |
