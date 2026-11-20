@@ -59,8 +59,8 @@ The current photos are cropped from the low-resolution homepage mockup so the si
 | `facility-exterior.jpg` | Testimonial, Who We Serve, case studies | 2400 × 1200 | Soft, replace |
 | `bg-interior-blur.jpg` | Blurred background behind the services diagram | any (blurred) | OK |
 | `bg-facility-blur.jpg` | Blurred background in Impact + Testimonial | any (blurred) | OK |
-| `leader-corby.jpg` | Corby headshot (square or 4:3) | 800 × 800 | Mockup placeholder, replace with real headshot |
-| `leader-arshad.jpg` | Dr. Arshad headshot (square or 4:3) | 800 × 800 | Mockup placeholder, replace with real headshot |
+| `leader-corby.jpg` | Corby headshot | 512 × 512 (square) | Final headshot provided; an 800px+ version would look sharper on large screens |
+| `leader-arshad.jpg` | Dr. Arshad headshot | 512 × 512 (square) | Final headshot provided; an 800px+ version would look sharper on large screens |
 
 Lab & Diagnostics and Ancillary Services don't have their own photos yet; add `svc-lab-diagnostics.jpg` / `svc-ancillary-services.jpg` and update `index.html` and `services.html`.
 
