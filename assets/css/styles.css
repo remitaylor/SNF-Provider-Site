@@ -191,19 +191,27 @@ ul { margin: 0; padding: 0; }
 .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 78% 30%; }
 .hero-photo::before {
   content: ""; position: absolute; inset: 0; z-index: 1;
-  background: linear-gradient(90deg, rgba(241,248,252,.97) 0%, rgba(241,248,252,.9) 28%, rgba(241,248,252,.55) 42%, rgba(241,248,252,0) 55%),
-              linear-gradient(0deg, rgba(8,34,63,.4) 0%, rgba(8,34,63,0) 30%);
+  background: linear-gradient(0deg, rgba(8,34,63,.35) 0%, rgba(8,34,63,0) 28%);
+}
+/* White wash behind the copy so headline, text and buttons stay legible */
+.hero::after {
+  content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+  background:
+    linear-gradient(90deg,
+      rgba(247,251,254,.97) 0%,
+      rgba(247,251,254,.94) max(540px, calc(50% - 110px)),
+      rgba(247,251,254,.6) max(660px, calc(50% + 10px)),
+      rgba(247,251,254,0) max(800px, calc(50% + 150px))),
+    linear-gradient(0deg, rgba(232,243,250,.18), rgba(232,243,250,.18));
 }
 .hero-grid { position: relative; z-index: 2; display: flex; align-items: center; min-height: min(620px, 80vh); padding-block: 64px; }
 .hero-copy { max-width: 520px; }
 .hero h1 .accent { white-space: nowrap; }
 @media (min-width: 1600px) {
-  .hero-photo { left: auto; width: 76%; }
-  .hero-photo::before { background: linear-gradient(90deg, #eef6fb 0%, rgba(241,248,252,.6) 12%, rgba(241,248,252,0) 30%), linear-gradient(0deg, rgba(8,34,63,.4) 0%, rgba(8,34,63,0) 30%); }
+  .hero-photo { left: auto; width: 76%; -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 22%); mask-image: linear-gradient(90deg, transparent 0%, #000 22%); }
 }
 @media (min-width: 961px) and (max-width: 1280px) {
   .hero-photo img { object-position: 100% 30%; }
-  .hero-photo::before { background: linear-gradient(90deg, rgba(241,248,252,.97) 0%, rgba(241,248,252,.92) 40%, rgba(241,248,252,.5) 55%, rgba(241,248,252,0) 68%), linear-gradient(0deg, rgba(8,34,63,.4) 0%, rgba(8,34,63,0) 30%); }
   .hero-copy { max-width: 470px; }
 }
 .hero h1 { margin-bottom: 20px; font-size: clamp(2.4rem, 5vw, 3.75rem); }
@@ -655,6 +663,7 @@ ul { margin: 0; padding: 0; }
 
   .hero { display: flex; flex-direction: column-reverse; }
   .hero-photo { position: relative; width: 100%; height: 340px; }
+  .hero::after { display: none; }
   .hero-photo::before { background: linear-gradient(0deg, rgba(8,34,63,.5) 0%, rgba(8,34,63,0) 45%); }
   .hero-grid { min-height: 0; padding-block: 48px 40px; position: static; }
   .hero-badge { bottom: 24px; left: var(--gutter); right: auto; }
