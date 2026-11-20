@@ -51,87 +51,163 @@
     <div class="section-head reveal">
       <span class="eyebrow">Clinical Service Lines</span>
       <h2 id="svc-title">Explore our services.</h2>
-      <p class="lead">Select a service to learn more about what’s included.</p>
+      <p class="lead">Choose a service to see what’s included and how it fits into IHP’s integrated model.</p>
     </div>
-    <div class="svc-grid">
-      <article class="svc reveal reveal-d1" id="primary-care">
-        <button class="svc-head" type="button" aria-expanded="false" aria-controls="primary-care-panel">
-          <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 12 0V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 12 0v-4"/><circle cx="20" cy="10" r="2"/></svg></span>
-          <span><span class="svc-name">Primary Care</span><span class="svc-desc">Ongoing medical management and comprehensive care for post-acute residents.</span></span>
-          <span class="svc-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+    <div class="svc-explorer reveal" data-svc-explorer>
+      <div class="svc-tabs" role="tablist" aria-label="Clinical services" aria-orientation="vertical">
+        <button class="svc-tab is-active" type="button" role="tab" id="tab-primary-care" aria-controls="primary-care" aria-selected="true" tabindex="0" data-target="primary-care">
+          <span class="svc-tab__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 12 0V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 12 0v-4"/><circle cx="20" cy="10" r="2"/></svg></span>
+          <span class="svc-tab__text"><strong>Primary Care</strong><small>Ongoing medical management and comprehensive care for post-acute residents.</small></span>
+          <span class="svc-tab__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
         </button>
-        <div class="svc-panel" id="primary-care-panel" role="region" aria-label="Primary Care details"><div>
-          <div class="svc-panel-inner">
-            <div><ul class="bullets"><li>Physician and advanced practice provider services</li><li>Ongoing medical management</li><li>Routine and acute visits within the facility</li><li>Care plan collaboration with nursing teams</li></ul><span class="status-pill">Service availability to be confirmed</span></div>
-            <div class="photo-frame "><img class="photo" src="assets/img/photos/svc-primary-care.jpg" alt="Physician visiting a resident" loading="lazy"></div>
-          </div>
-        </div></div>
-      </article>
-      <article class="svc reveal reveal-d2" id="medical-directorship">
-        <button class="svc-head" type="button" aria-expanded="false" aria-controls="medical-directorship-panel">
-          <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg></span>
-          <span><span class="svc-name">Medical Directorship</span><span class="svc-desc">Physician leadership and clinical oversight for your facility.</span></span>
-          <span class="svc-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+        <button class="svc-tab" type="button" role="tab" id="tab-medical-directorship" aria-controls="medical-directorship" aria-selected="false" tabindex="-1" data-target="medical-directorship">
+          <span class="svc-tab__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg></span>
+          <span class="svc-tab__text"><strong>Medical Directorship</strong><small>Physician leadership and clinical oversight for your facility.</small></span>
+          <span class="svc-tab__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
         </button>
-        <div class="svc-panel" id="medical-directorship-panel" role="region" aria-label="Medical Directorship details"><div>
-          <div class="svc-panel-inner">
-            <div><ul class="bullets"><li>Physician leadership and clinical oversight</li><li>Collaboration with facility administration and care teams</li><li>Quality assurance and policy guidance</li><li>Regulatory and survey-readiness support</li></ul><span class="status-pill">Service availability to be confirmed</span></div>
-            <div class="photo-frame "><img class="photo" src="assets/img/photos/svc-medical-directorship.jpg" alt="Medical director with care team" loading="lazy"></div>
-          </div>
-        </div></div>
-      </article>
-      <article class="svc reveal reveal-d1" id="psychological-care">
-        <button class="svc-head" type="button" aria-expanded="false" aria-controls="psychological-care-panel">
-          <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a7 7 0 0 0-7 7c0 2 .8 3.7 2 4.9V21h7v-3h2a2 2 0 0 0 2-2v-3l2-1-2-3.6A7 7 0 0 0 12 3z"/><path d="M10 9.5a2 2 0 1 1 3 1.7c-.6.4-1 .9-1 1.6V13"/><path d="M12 15.5h.01"/></svg></span>
-          <span><span class="svc-name">Psychological Care</span><span class="svc-desc">Assessment and treatment services to support mental health and well-being.</span></span>
-          <span class="svc-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+        <button class="svc-tab" type="button" role="tab" id="tab-psychological-care" aria-controls="psychological-care" aria-selected="false" tabindex="-1" data-target="psychological-care">
+          <span class="svc-tab__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a7 7 0 0 0-7 7c0 2 .8 3.7 2 4.9V21h7v-3h2a2 2 0 0 0 2-2v-3l2-1-2-3.6A7 7 0 0 0 12 3z"/><path d="M10 9.5a2 2 0 1 1 3 1.7c-.6.4-1 .9-1 1.6V13"/><path d="M12 15.5h.01"/></svg></span>
+          <span class="svc-tab__text"><strong>Psychological Care</strong><small>Assessment and treatment services to support mental health and well-being.</small></span>
+          <span class="svc-tab__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
         </button>
-        <div class="svc-panel" id="psychological-care-panel" role="region" aria-label="Psychological Care details"><div>
-          <div class="svc-panel-inner">
-            <div><ul class="bullets"><li>Psychological assessment and treatment services</li><li>Mental health support for residents</li><li>Individual therapy and counseling</li><li>Support during transitions of care</li></ul><span class="status-pill">Service availability to be confirmed</span></div>
-            <div class="photo-frame "><img class="photo" src="assets/img/photos/svc-psychological-care.jpg" alt="Psychologist in consultation" loading="lazy"></div>
-          </div>
-        </div></div>
-      </article>
-      <article class="svc reveal reveal-d2" id="behavioral-health">
-        <button class="svc-head" type="button" aria-expanded="false" aria-controls="behavioral-health-panel">
-          <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg></span>
-          <span><span class="svc-name">Behavioral Health</span><span class="svc-desc">Integrated behavioral health support for improved resident outcomes.</span></span>
-          <span class="svc-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+        <button class="svc-tab" type="button" role="tab" id="tab-behavioral-health" aria-controls="behavioral-health" aria-selected="false" tabindex="-1" data-target="behavioral-health">
+          <span class="svc-tab__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg></span>
+          <span class="svc-tab__text"><strong>Behavioral Health</strong><small>Integrated behavioral health support for improved resident outcomes.</small></span>
+          <span class="svc-tab__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
         </button>
-        <div class="svc-panel" id="behavioral-health-panel" role="region" aria-label="Behavioral Health details"><div>
-          <div class="svc-panel-inner">
-            <div><ul class="bullets"><li>Behavioral health management and support</li><li>Coordination with facility clinical teams</li><li>Medication review in partnership with providers</li><li>Staff education on behavioral care</li></ul><span class="status-pill">Service availability to be confirmed</span></div>
-            <div class="photo-frame "><img class="photo" src="assets/img/photos/svc-behavioral-health.jpg" alt="Behavioral health clinician" loading="lazy"></div>
-          </div>
-        </div></div>
-      </article>
-      <article class="svc reveal reveal-d1" id="lab-diagnostics">
-        <button class="svc-head" type="button" aria-expanded="false" aria-controls="lab-diagnostics-panel">
-          <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v7.53a2 2 0 0 1-.21.9L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.07-10.13A2 2 0 0 1 14 9.53V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></svg></span>
-          <span><span class="svc-name">Laboratory &amp; Diagnostics</span><span class="svc-desc">On-site lab testing and diagnostic imaging to speed clinical decisions.</span></span>
-          <span class="svc-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+        <button class="svc-tab" type="button" role="tab" id="tab-lab-diagnostics" aria-controls="lab-diagnostics" aria-selected="false" tabindex="-1" data-target="lab-diagnostics">
+          <span class="svc-tab__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v7.53a2 2 0 0 1-.21.9L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.07-10.13A2 2 0 0 1 14 9.53V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></svg></span>
+          <span class="svc-tab__text"><strong>Laboratory &amp; Diagnostics</strong><small>On-site lab testing and diagnostic imaging to speed clinical decisions.</small></span>
+          <span class="svc-tab__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
         </button>
-        <div class="svc-panel" id="lab-diagnostics-panel" role="region" aria-label="Laboratory &amp; Diagnostics details"><div>
-          <div class="svc-panel-inner">
-            <div><ul class="bullets"><li>Laboratory testing and related support</li><li>X-ray and diagnostic imaging services</li><li>Timely results delivered to providers</li><li>Reduced need for off-site transfers</li></ul><span class="status-pill">Service availability to be confirmed</span></div>
-            <div class="photo-frame "><img class="photo" src="assets/img/photos/svc-lab-diagnostics.jpg" alt="Lab technician with samples" loading="lazy"></div>
-          </div>
-        </div></div>
-      </article>
-      <article class="svc reveal reveal-d2" id="ancillary-services">
-        <button class="svc-head" type="button" aria-expanded="false" aria-controls="ancillary-services-panel">
-          <span class="icon-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg></span>
-          <span><span class="svc-name">Ancillary Services</span><span class="svc-desc">Supporting clinical services and coordinated access to specialty care.</span></span>
-          <span class="svc-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></span>
+        <button class="svc-tab" type="button" role="tab" id="tab-ancillary-services" aria-controls="ancillary-services" aria-selected="false" tabindex="-1" data-target="ancillary-services">
+          <span class="svc-tab__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg></span>
+          <span class="svc-tab__text"><strong>Ancillary Services</strong><small>Supporting clinical services and coordinated access to specialty care.</small></span>
+          <span class="svc-tab__arrow"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></span>
         </button>
-        <div class="svc-panel" id="ancillary-services-panel" role="region" aria-label="Ancillary Services details"><div>
-          <div class="svc-panel-inner">
-            <div><ul class="bullets"><li>Additional supporting clinical services</li><li>Coordinated access to specialty and ancillary care</li><li>A single point of coordination</li><li>Seamless referral management</li></ul><span class="status-pill">Service availability to be confirmed</span></div>
-            <div class="photo-frame "><img class="photo" src="assets/img/photos/svc-ancillary-services.jpg" alt="Specialist visit in a facility" loading="lazy"></div>
+      </div>
+      <div class="svc-stage">
+        <article class="svc-pane is-active" id="primary-care" role="tabpanel" aria-labelledby="tab-primary-care">
+          <div class="svc-pane__media">
+            <img src="assets/img/photos/svc-primary-care.jpg" alt="Physician visiting a resident" loading="lazy">
+            <span class="svc-pane__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 12 0V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 12 0v-4"/><circle cx="20" cy="10" r="2"/></svg>Primary Care</span>
           </div>
-        </div></div>
-      </article>
+          <div class="svc-pane__body">
+            <span class="eyebrow">Service 01 of 06</span>
+            <h3>Primary Care</h3>
+            <p class="svc-pane__lead">Ongoing medical management and comprehensive care for post-acute residents.</p>
+            <h4>What’s included</h4>
+            <ul class="svc-pane__list"><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Physician and advanced practice provider services</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Ongoing medical management</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Routine and acute visits within the facility</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Care plan collaboration with nursing teams</li></ul>
+            <div class="svc-pane__foot">
+              <span class="status-pill">Service availability to be confirmed</span>
+              <div class="svc-pane__actions">
+                <a class="btn btn--primary" href="contact.html#partnership-inquiries">Discuss This Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                <button class="svc-next" type="button" data-target="medical-directorship">Next: Medical Directorship <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="svc-pane" id="medical-directorship" role="tabpanel" aria-labelledby="tab-medical-directorship" aria-hidden="true" inert>
+          <div class="svc-pane__media">
+            <img src="assets/img/photos/svc-medical-directorship.jpg" alt="Medical director with care team" loading="lazy">
+            <span class="svc-pane__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="8" height="4" x="8" y="2" rx="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><path d="M12 11h4"/><path d="M12 16h4"/><path d="M8 11h.01"/><path d="M8 16h.01"/></svg>Medical Directorship</span>
+          </div>
+          <div class="svc-pane__body">
+            <span class="eyebrow">Service 02 of 06</span>
+            <h3>Medical Directorship</h3>
+            <p class="svc-pane__lead">Physician leadership and clinical oversight for your facility.</p>
+            <h4>What’s included</h4>
+            <ul class="svc-pane__list"><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Physician leadership and clinical oversight</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Collaboration with facility administration and care teams</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Quality assurance and policy guidance</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Regulatory and survey-readiness support</li></ul>
+            <div class="svc-pane__foot">
+              <span class="status-pill">Service availability to be confirmed</span>
+              <div class="svc-pane__actions">
+                <a class="btn btn--primary" href="contact.html#partnership-inquiries">Discuss This Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                <button class="svc-next" type="button" data-target="psychological-care">Next: Psychological Care <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="svc-pane" id="psychological-care" role="tabpanel" aria-labelledby="tab-psychological-care" aria-hidden="true" inert>
+          <div class="svc-pane__media">
+            <img src="assets/img/photos/svc-psychological-care.jpg" alt="Psychologist in consultation" loading="lazy">
+            <span class="svc-pane__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a7 7 0 0 0-7 7c0 2 .8 3.7 2 4.9V21h7v-3h2a2 2 0 0 0 2-2v-3l2-1-2-3.6A7 7 0 0 0 12 3z"/><path d="M10 9.5a2 2 0 1 1 3 1.7c-.6.4-1 .9-1 1.6V13"/><path d="M12 15.5h.01"/></svg>Psychological Care</span>
+          </div>
+          <div class="svc-pane__body">
+            <span class="eyebrow">Service 03 of 06</span>
+            <h3>Psychological Care</h3>
+            <p class="svc-pane__lead">Assessment and treatment services to support mental health and well-being.</p>
+            <h4>What’s included</h4>
+            <ul class="svc-pane__list"><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Psychological assessment and treatment services</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Mental health support for residents</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Individual therapy and counseling</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Support during transitions of care</li></ul>
+            <div class="svc-pane__foot">
+              <span class="status-pill">Service availability to be confirmed</span>
+              <div class="svc-pane__actions">
+                <a class="btn btn--primary" href="contact.html#partnership-inquiries">Discuss This Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                <button class="svc-next" type="button" data-target="behavioral-health">Next: Behavioral Health <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="svc-pane" id="behavioral-health" role="tabpanel" aria-labelledby="tab-behavioral-health" aria-hidden="true" inert>
+          <div class="svc-pane__media">
+            <img src="assets/img/photos/svc-behavioral-health.jpg" alt="Behavioral health clinician" loading="lazy">
+            <span class="svc-pane__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg>Behavioral Health</span>
+          </div>
+          <div class="svc-pane__body">
+            <span class="eyebrow">Service 04 of 06</span>
+            <h3>Behavioral Health</h3>
+            <p class="svc-pane__lead">Integrated behavioral health support for improved resident outcomes.</p>
+            <h4>What’s included</h4>
+            <ul class="svc-pane__list"><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Behavioral health management and support</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Coordination with facility clinical teams</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Medication review in partnership with providers</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Staff education on behavioral care</li></ul>
+            <div class="svc-pane__foot">
+              <span class="status-pill">Service availability to be confirmed</span>
+              <div class="svc-pane__actions">
+                <a class="btn btn--primary" href="contact.html#partnership-inquiries">Discuss This Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                <button class="svc-next" type="button" data-target="lab-diagnostics">Next: Laboratory &amp; Diagnostics <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="svc-pane" id="lab-diagnostics" role="tabpanel" aria-labelledby="tab-lab-diagnostics" aria-hidden="true" inert>
+          <div class="svc-pane__media">
+            <img src="assets/img/photos/svc-lab-diagnostics.jpg" alt="Lab technician with samples" loading="lazy">
+            <span class="svc-pane__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 2v7.53a2 2 0 0 1-.21.9L4.72 20.55a1 1 0 0 0 .9 1.45h12.76a1 1 0 0 0 .9-1.45l-5.07-10.13A2 2 0 0 1 14 9.53V2"/><path d="M8.5 2h7"/><path d="M7 16h10"/></svg>Laboratory &amp; Diagnostics</span>
+          </div>
+          <div class="svc-pane__body">
+            <span class="eyebrow">Service 05 of 06</span>
+            <h3>Laboratory &amp; Diagnostics</h3>
+            <p class="svc-pane__lead">On-site lab testing and diagnostic imaging to speed clinical decisions.</p>
+            <h4>What’s included</h4>
+            <ul class="svc-pane__list"><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Laboratory testing and related support</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>X-ray and diagnostic imaging services</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Timely results delivered to providers</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Reduced need for off-site transfers</li></ul>
+            <div class="svc-pane__foot">
+              <span class="status-pill">Service availability to be confirmed</span>
+              <div class="svc-pane__actions">
+                <a class="btn btn--primary" href="contact.html#partnership-inquiries">Discuss This Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                <button class="svc-next" type="button" data-target="ancillary-services">Next: Ancillary Services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="svc-pane" id="ancillary-services" role="tabpanel" aria-labelledby="tab-ancillary-services" aria-hidden="true" inert>
+          <div class="svc-pane__media">
+            <img src="assets/img/photos/svc-ancillary-services.jpg" alt="Specialist visit in a facility" loading="lazy">
+            <span class="svc-pane__badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z"/></svg>Ancillary Services</span>
+          </div>
+          <div class="svc-pane__body">
+            <span class="eyebrow">Service 06 of 06</span>
+            <h3>Ancillary Services</h3>
+            <p class="svc-pane__lead">Supporting clinical services and coordinated access to specialty care.</p>
+            <h4>What’s included</h4>
+            <ul class="svc-pane__list"><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Additional supporting clinical services</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Coordinated access to specialty and ancillary care</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>A single point of coordination</li><li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>Seamless referral management</li></ul>
+            <div class="svc-pane__foot">
+              <span class="status-pill">Service availability to be confirmed</span>
+              <div class="svc-pane__actions">
+                <a class="btn btn--primary" href="contact.html#partnership-inquiries">Discuss This Service <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+                <button class="svc-next" type="button" data-target="primary-care">Next: Primary Care <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
     </div>
   </div>
 </section>
