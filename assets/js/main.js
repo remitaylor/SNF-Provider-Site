@@ -96,6 +96,55 @@
     update();
   });
 
+  /* Interactive services orbit ------------------------------------------ */
+  document.querySelectorAll('[data-orbit]').forEach(function (root) {
+    var nodes = Array.prototype.slice.call(root.querySelectorAll('.orbit-node'));
+    var spokes = root.querySelectorAll('.orbit-spokes line');
+    var items = root.querySelectorAll('.orbit-detail__item');
+    var current = -1, timer = null, userEngaged = false, paused = false, inView = false;
+
+    function select(i) {
+      current = i;
+      nodes.forEach(function (n, k) {
+        n.classList.toggle('is-active', k === i);
+        n.setAttribute('aria-pressed', String(k === i));
+      });
+      spokes.forEach(function (l) { l.classList.toggle('is-active', +l.getAttribute('data-index') === i); });
+      items.forEach(function (it) { it.hidden = +it.getAttribute('data-index') !== i; });
+    }
+    function stop() { if (timer) { clearInterval(timer); timer = null; } }
+    function start() {
+      stop();
+      if (reduceMotion || userEngaged || paused || !inView) return;
+      timer = setInterval(function () { select((current + 1) % nodes.length); }, 3500);
+    }
+    function engage(i) { userEngaged = true; stop(); select(i); }
+
+    nodes.forEach(function (node, i) {
+      node.addEventListener('click', function () { engage(i); });
+      node.addEventListener('focus', function () { engage(i); });
+      node.addEventListener('mouseenter', function () {
+        if (window.matchMedia('(hover: hover)').matches) engage(i);
+      });
+      node.addEventListener('keydown', function (e) {
+        var k = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
+        if (!k) return;
+        e.preventDefault();
+        nodes[(i + k + nodes.length) % nodes.length].focus();
+      });
+    });
+    root.addEventListener('mouseenter', function () { paused = true; stop(); });
+    root.addEventListener('mouseleave', function () { paused = false; start(); });
+
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        inView = entries[0].isIntersecting;
+        if (inView && current === -1 && !reduceMotion) select(0);
+        inView ? start() : stop();
+      }, { threshold: 0.35 }).observe(root);
+    }
+  });
+
   /* Expandable service cards -------------------------------------------- */
   function openSvc(svc, open) {
     var btn = svc.querySelector('.svc-head');
